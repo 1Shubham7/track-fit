@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./BMI.css"
+import Navbar from "../navbar/navbar.jsx";
 
 export default function BMI() {
   const [age, setAge] = useState("");
@@ -44,8 +46,10 @@ export default function BMI() {
   console.log(bmiData, "===");
   return (
     <>
+    <div className="all">
+    <Navbar  />
       {Object.keys(bmiData).length !== 0 ? (
-        <div style={{height:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}}>
+        <div className="container" style={{height:"80vh", display:"flex", justifyContent:"center", alignItems:"center"}}>
           <div style={{border:"2px solid black",padding:"50px",borderRadius:"20px", boxShadow:"5px 5px 5px black"}}>
             <div>BMI : {bmiData.data.bmi} </div>
             <div>Health : {bmiData.data.health}</div>
@@ -54,8 +58,9 @@ export default function BMI() {
             </button>
           </div>
         </div>
+        
       ) : (
-        <div>
+        <div class="container" style={{gap:"1rem"}}>
           <div class="form-group">
             <label for="exampleInputEmail1">Age</label>
             <input
@@ -67,6 +72,7 @@ export default function BMI() {
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
+          <br></br>
           <div class="form-group">
             <label for="exampleInputEmail1">Weight</label>
             <input
@@ -89,11 +95,12 @@ export default function BMI() {
               onChange={(e) => setHeight(e.target.value)}
             />
           </div>
-          <button type="submit" class="btn btn-primary" onClick={() => check()}>
+          <button type="submit" class="btn btn-success" onClick={() => check()}>
             Submit
           </button>
         </div>
       )}
+      </div>
     </>
   );
 }

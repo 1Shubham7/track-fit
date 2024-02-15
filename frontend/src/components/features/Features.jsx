@@ -9,20 +9,19 @@ function Features() {
                 <div className="col-md-12">
                     <div className="row">
                         <div style={{marginLeft:'4rem'}} className="col-md-3 mb-2">
-                            <Card title="Web Development" img="card1.png" text="Morbi eget neque risus. Duis erat quam, porta quis enim id, venenatis blandit nunc. " />
+                            <Card title="Diet Plan" img="card1.png" text="The user can see the next diet with the nutritional value required​" />
                         </div>
                         <div className="col-md-3 mb-2">
-                        <Card title="E-Commerce Services" img="card2.png" text="Maecenas dictum efficitur felis non gravida. Vestibulum vitae ante luctus, accumsan mi vitae, pretium metus." />
+                        <Card title="Daily Tracker" img="card2.png" text="The user will  also had a record maintained in website which shows his past nutritional intakes and future task to do to achieve his goals." />
                         </div>
                         <div className="col-md-3 mb-2">
-                        <Card title="Cyber Security" img="card3.png" text="Phasellus suscipit nibh at nisi finibus vestibulum sit amet vitae massa. Suspendisse non est eget elit pulvinar consectetur nec non sapien." />
+                        <Card title="Fittness Trainer" img="card3.png" text="Personalized health record has been given by the machine or trainer.." />
                         </div>
                     </div>
-                </div>
-                
+                </div>                
             </center>
             </div>
         </div>
-      );
+      )
 }
 export default Features;

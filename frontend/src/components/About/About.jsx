@@ -1,8 +1,9 @@
+// import 
+
 function About() {
     return (
       <>
         <div style={{marginTop:'3rem',width:'50%',height:'10px', marginLeft:'-3rem'}} className="about-scroll"></div>
-  
         <div className=" about">
           <div className="row">
             <div className="col-md-6 text-center">

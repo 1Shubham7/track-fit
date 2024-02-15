@@ -5,7 +5,7 @@ import QuoteOne from '../quoteOne/QuoteOne';
 import Me from '../me/Me';
 import Footer from '../footer/Footer';
 import BmiButton from '../BmiButton/BmiButton';
-import IdealWeight from '../IdealWeight/IdealWeight';
+// import IdealWeight from '../IdealWeight/IdealWeight';
 import Main from '../Main/Main';
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
 
     <Me />
     <BmiButton/>
-    <IdealWeight/>
+    {/* <IdealWeight/> */}
     <Footer />
 
     </>
