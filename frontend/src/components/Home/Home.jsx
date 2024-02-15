@@ -7,6 +7,7 @@ import Footer from '../footer/Footer';
 import BmiButton from '../BmiButton/BmiButton';
 // import IdealWeight from '../IdealWeight/IdealWeight';
 import Main from '../Main/Main';
+import Entries from '../foodEntry/FoodEntry'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
     <Main />
 
     <Me />
+    <Entries />
     <BmiButton/>
     {/* <IdealWeight/> */}
     <Footer />
